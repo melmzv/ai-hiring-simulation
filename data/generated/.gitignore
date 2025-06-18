@@ -1,3 +1,5 @@
 # Do not commit any files from here. They should be prepared by running code
 *
 !.gitignore
+!Figure_1.png
+!Figure_2.png
