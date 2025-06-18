@@ -1,6 +1,3 @@
-# ai_job_matching_prototype.ipynb
-
-# Cell 1: Imports and Setup
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,6 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
 import random
 
+# Cell 1: Set random seed for reproducibility: ensures consistent simulation results across runs
 np.random.seed(42)
 
 # Cell 2: Generate Synthetic Job Seekers

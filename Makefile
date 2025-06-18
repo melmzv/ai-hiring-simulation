@@ -19,6 +19,6 @@ $(OUTCOME_DATA): code/python/ai_job_matching_simulation.py
 clean:
 	rm -f $(OUTCOME_DATA)
 
-# Clean everything including pulled data if added later
+# Clean everything including pulled data (if added later)
 very-clean: clean
 	rm -rf data/pulled

@@ -1,8 +1,9 @@
 # AI-Based Job Matching Simulation for Labor Market Research
+The project extends the theoretical and empirical foundations laid out in recent academic work - most notably **Le Barbanchon et al. (2023)** - on the use of algorithmic job recommendation systems to mitigate search frictions in two-sided labor markets. The simulation approximates a stylized version of a randomized controlled trial in which AI-based job recommendations are evaluated against traditional search mechanisms.
 
-This repository contains a fully reproducible Python-based prototype that simulates AI-assisted job matching in the labor market. It is designed as the empirical foundation for a seminar paper on **AI and management practices** as part of the course Advanced Topics in Management.
+The motivation behind this prototype is twofold: first, to critically examine how AI tools reshape managerial decision-making and hiring practices; second, to explore their implications for job seekers, especially future graduates, navigating increasingly complex, tech-mediated labor markets. In line with the seminar’s learning goals, this prototype not only simulates algorithmic impact on match quality, retention, and wages, but also provides an extendable framework for analyzing equity and effectiveness in digital recruitment ecosystems.
 
-The simulation is motivated by recent work on algorithmic recommendations and labor market frictions (e.g., Le Barbanchon et al., 2023). It is adaptable to both synthetic and real-world data (e.g., O*NET, unemployment or wage statistics) and provides a flexible foundation for research into modern hiring practices, job seeker inequality, and the effectiveness of AI in search and matching.
+The simulation is designed to be modular and adaptable: it runs on synthetic data but can easily be extended to integrate real-world datasets (e.g., **O\*NET**, **LEHD**, or wage records). The aim is to equip management researchers with a transparent, replicable foundation to investigate how data-driven matching technologies alter employment dynamics—whether for efficiency, fairness, or both.
 
 # 🧠 What Does This Repo Do?
 
@@ -18,7 +19,7 @@ This section presents the simulation results from the Python prototype that mode
 
 Inspired by Le Barbanchon et al. (2023), the simulation mimics a two-sided market where job seekers and vacancies are randomly assigned to control or treatment groups. The treatment group receives AI-generated recommendations based on cosine similarity scores across skill profiles. Each simulation run is stochastic by design: job offers and acceptance decisions depend on probabilistic matching scores and preference alignment. As a result, you may observe slightly different outcomes across multiple executions - this is expected and part of the experiment's flexible nature.
 
-The simulation also allows for subgroup analysis by distinguishing between low-skilled and high-skilled workers, revealing heterogeneous treatment effects.
+The simulation also allows for subgroup analysis by distinguishing between low-skilled and high-skilled workers, revealing heterogeneous treatment effects. Simulated wages are denominated in USD, reflecting typical U.S. labor market conditions.
 
 ## 📊 Outcome Comparison
 
@@ -46,7 +47,7 @@ Subgroup-level results help unpack heterogeneity in treatment effects:
 | Low Skill   | Control        | 0.7342      | 0.7200   | 43,057     |
 | Low Skill   | Treated        | 0.9148      | 0.9038   | 47,734     |
 
-The effect is particularly pronounced among low-skilled individuals - AI recommendations help them catch up in terms of match quality, stability, and wage. These findings are consistent with the heterogeneity insights reported in Le Barbanchon et al. (2023).
+The low-skilled group experienced the largest **relative gains**, especially in retention and wage outcomes. This supports the hypothesis developed in the seminar paper: AI recommendations are particularly effective for job seekers facing greater frictions. These results align with the heterogeneity patterns observed in Le Barbanchon et al. (2023), suggesting that personalized algorithmic tools can mitigate disadvantages in job matching for vulnerable groups.
 
 ## 📈 Visual Output
 
@@ -64,15 +65,21 @@ The effect is particularly pronounced among low-skilled individuals - AI recomme
 
 This simulation shows that the prototype behaves as designed: it successfully captures AI recommendation effects on job matching outcomes. The results replicate core insights from Le Barbanchon et al. (2023) in a stylized setting and can be extended further. The flexible simulation design also enables subgroup comparisons, robustness checks, and further customization for research purposes.
 
+Having ideas or fixes? Contributions are welcome! :raised_hands:
+
 # How to Reproduce the Simulation Output
 
 To reproduce the simulation results for this project, follow these steps:
 1. Clone the repository
-2. Create a virtual environment
+2. Create a virtual environment with `python3 -m venv venv && source venv/bin/activate`
 3. Install dependencies by running `pip install -r requirements.txt` in the terminal
 4. Run `make all` in the terminal
 
-# 📚 Suggested Readings
-•	Cowgill, B., & Perkowski, P. (2024). Delegation in hiring: Evidence from a two-sided audit. Journal of Political Economy Microeconomics, 2(4), 852–882. https://doi.org/10.1086/732127
-•	Le Barbanchon, T., Hensvik, L., & Rathelot, R. (2023). How can AI improve search and matching? Evidence from 59 million personalized job recommendations. SSRN Working Paper No. 4604814. https://ssrn.com/abstract=4604814
-•	Miklós-Thal, J., & Tucker, C. (2019). Collusion by algorithm: Does better demand prediction facilitate coordination between sellers? Management Science, 65(4), 1552–1561. https://doi.org/10.1287/mnsc.2019.3287
+
+# 📚 Suggested Readings & References
+-	Cowgill, B., & Perkowski, P. (2024). Delegation in hiring: Evidence from a two-sided audit. Journal of Political Economy Microeconomics, 2(4), 852–882. https://doi.org/10.1086/732127
+-	Le Barbanchon, T., Hensvik, L., & Rathelot, R. (2023). How can AI improve search and matching? Evidence from 59 million personalized job recommendations. SSRN Working Paper No. 4604814. https://ssrn.com/abstract=4604814
+-	Miklós-Thal, J., & Tucker, C. (2019). Collusion by algorithm: Does better demand prediction facilitate coordination between sellers? Management Science, 65(4), 1552–1561. https://doi.org/10.1287/mnsc.2019.3287
+
+# Licensing
+The repository is licensed under the MIT license.

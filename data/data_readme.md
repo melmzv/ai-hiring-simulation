@@ -1,9 +1,9 @@
-This `data_readme.md` briefly documents the structure and use of data for the AI Hiring Simulation project. The repository aims to remain reproducible, minimal, and organized, especially in the context of a simulated extension of the study proposed in the individual seminar paper on management and AI in labor markets.
+This `data_readme.md` briefly documents the structure and use of data for the AI Hiring Simulation project. The repository aims to remain reproducible and organized, especially in the context of a simulated extension of the study proposed in the individual seminar paper on management and AI in labor markets.
 
 The setup encourages a clean separation of code-generated data from externally sourced data. Only essential datasets that are not easily reproducible or are lightweight should be committed.
 
 The directories are organized as follows:
-- pulled: Contains raw data pulled from APIs, institutional databases (e.g., U.S. Department of Labor, Census Bureau), or scraped job boards in real-world extensions. For example:
+- pulled: Contains raw data pulled from APIs, institutional databases (e.g., U.S. Department of Labor, Census Bureau). For example:
     - Unemployment Insurance wage records
     - Job seeker registration data
     - Vacancy records with SOC codes for matching to O\*NET
