@@ -3,7 +3,7 @@ The project extends the theoretical and empirical foundations laid out in recent
 
 The motivation behind this prototype is twofold: first, to critically examine how AI tools reshape managerial decision-making and hiring practices; second, to explore their implications for job seekers, especially future graduates, navigating increasingly complex, tech-mediated labor markets. In line with the seminar’s learning goals, this prototype not only simulates algorithmic impact on match quality, retention, and wages, but also provides an extendable framework for analyzing equity and effectiveness in digital recruitment ecosystems.
 
-The simulation is designed to be modular and adaptable: it runs on synthetic data but can easily be extended to integrate real-world datasets (e.g., **O\*NET**, **LEHD**, or wage records). The aim is to equip management researchers with a transparent, replicable foundation to investigate how data-driven matching technologies alter employment dynamics—whether for efficiency, fairness, or both.
+The simulation is designed to be modular and adaptable: it runs on synthetic data but can easily be extended to integrate real-world datasets (e.g., **O\*NET**, **LEHD**, or wage records). The aim is to equip management researchers with a transparent, replicable foundation to investigate how data-driven matching technologies alter employment dynamics - whether for efficiency, fairness, or both.
 
 # 🧠 What Does This Repo Do?
 
@@ -53,7 +53,7 @@ The low-skilled group experienced the largest **relative gains**, especially in 
 
 <p align="center">
   <img src="data/generated/Figure_1.png" alt="Bar Chart: Retention and Wage (Single Run)" width="700"/>
-  <br><em><strong>Figure 1:</strong> Bar chart comparing retention rate and average wage in a single simulation run. Individuals who received AI-generated job recommendations (treated group) had a substantially higher retention rate (≈92.9%) than those in the control group (≈78.4%). Their average wage was also significantly higher (≈€47,911 vs. €44,048). This illustrates the expected direction of the AI treatment effect on both job stability and economic reward - even though the magnitude can vary across runs.</em>
+  <br><em><strong>Figure 1:</strong> Bar chart comparing retention rate and average wage in a single simulation run. Individuals who received AI-generated job recommendations (treated group) had a substantially higher retention rate (≈92.9%) than those in the control group (≈78.4%). Their average wage was also significantly higher (≈$47,911 vs. $44,048). This illustrates the expected direction of the AI treatment effect on both job stability and economic reward - even though the magnitude can vary across runs.</em>
 </p>
 
 <p align="center">
