@@ -51,12 +51,12 @@ The effect is particularly pronounced among low-skilled individuals — AI recom
 ## 📈 Visual Output
 
 <p align="center">
-  <img src="figures/Screenshot 2025-06-18 at 21.56.13.png" alt="Bar Chart: Retention and Wage (Single Run)" width="700"/>
+  <img src="data/generated/Figure_1.png" alt="Bar Chart: Retention and Wage (Single Run)" width="700"/>
   <br><em><strong>Figure 1:</strong> Bar chart comparing retention rate and average wage in a single simulation run. Individuals who received AI-generated job recommendations (treated group) had a substantially higher retention rate (≈92.9%) than those in the control group (≈78.4%). Their average wage was also significantly higher (≈€47,911 vs. €44,048). This illustrates the expected direction of the AI treatment effect on both job stability and economic reward—even though the magnitude can vary across runs.</em>
 </p>
 
 <p align="center">
-  <img src="figures/Screenshot 2025-06-18 at 21.56.40.png" alt="Box Plot: 100 Simulations" width="900"/>
+  <img src="data/generated/Figure_2.png" alt="Box Plot: 100 Simulations" width="900"/>
   <br><em><strong>Figure 2:</strong> Box plots comparing the distribution of three key metrics—match score, retention, and wage—across 100 independent simulation runs. Treated individuals consistently outperform the control group across all dimensions. Notably, the interquartile ranges of the treated group are tighter for match scores, suggesting more reliable targeting by the AI. Retention and wage distributions also show favorable medians and reduced lower-end outliers in the treated group, indicating that AI not only improves outcomes on average but also reduces downside risk.</em>
 </p>
 
